@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="2dp"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/toolBarMasterStyle"
+        app:titleTextAppearance="@style/Toolbar.TitleTextMaster" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_frame"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="20"
+                android:shadowDy="20"
+                android:shadowRadius="20"
+                android:text="Pre Match Data"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/superScoutName"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="textPersonName"
+                android:hint="Scout Name"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/superScoutMatch"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="number"
+                android:hint="Match #"
+                android:padding="10dp"/>
+
+             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alliance"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"/>
+        <RadioButton android:id="@+id/blueAllianceToggle"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:buttonTint="@color/blue"
+                     android:text="Blue"/>
+        <RadioButton android:id="@+id/redAllianceToggle"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:buttonTint="@color/red_500"
+                     android:text="Red"/>
+    </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/allianceTeam1"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="number"
+                android:hint="Team #1"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/allianceTeam2"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="number"
+                android:hint="Team #2"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/allianceTeam3"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="number"
+                android:hint="Team #3"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/startMatchButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_button"
+                android:elevation="8dp"
+                android:text="Start Match"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "186682198422",
+    "firebase_url": "https://firebots-scouting-app.firebaseio.com",
+    "project_id": "firebots-scouting-app",
+    "storage_bucket": "firebots-scouting-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186682198422:android:5ba8c2f689c32165",
+        "android_client_info": {
+          "package_name": "com.vipul.bit_hotels"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186682198422-4e8pfg3grepd82iffn98jrj9i1usjn8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vipul.bit_hotels",
+            "certificate_hash": "c6eb16174a758bd01f8a11350339f56985e84f5b"
+          }
+        },
+        {
+          "client_id": "186682198422-abpf970pbisr826ocv6ui8dnj6cg20ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7QvPqE2nk7Txx8v9L9h21dDoe7OYdg8U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186682198422-abpf970pbisr826ocv6ui8dnj6cg20ar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/orange_shade">
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:drawableLeft="@drawable/team_number"
+            android:id="@+id/scout_name"
+            android:hint="Patient Age"
+            android:textColorHint="#000000"
+            android:layout_gravity="center_horizontal"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|number"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/match_number"
+            android:id="@+id/match_number"
+            android:hint="Patient Weight"
+            android:textColorHint="#000000"
+            android:layout_gravity="center_horizontal"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|number"
+            android:ems="10"
+            android:drawableLeft="@drawable/team_number"
+            android:id="@+id/scout_name"
+            android:hint="Patient Height"
+            android:textColorHint="#000000"
+            android:layout_gravity="center_horizontal"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- <android.support.design.widget.TextInputLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp">
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:inputType="text|number"
+         android:ems="10"
+         android:drawableLeft="@drawable/team_number"
+         android:id="@+id/name_of_competition"
+         android:hint="Name Of Competition"
+         android:textColorHint="#000000"
+         android:layout_gravity="center_horizontal"/>
+     </android.support.design.widget.TextInputLayout> -->
+
+    <!-- <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginTop="20dp"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Competition"
+             android:textSize="18dp"
+             android:layout_marginBottom="5dp"/>
+         <RadioButton android:id="@+id/arizonaToggle"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Arizona"/>
+         <RadioButton android:id="@+id/sacramentoToggle"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Sacramento"/>
+     </RadioGroup> -->
+
+    <Button
+        android:id="@+id/begin_teleop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:padding="40dp"
+        android:text="Move to Results"
+        android:textSize="30dp"/>
+
+
+
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Crossed baseline?"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/baseline_auton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:buttonTint="#000000"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Cubes in Scale"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/subtractCubeForOwnScale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="-1"/>
+
+        <TextView
+            android:id="@+id/cubes_in_own_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="0"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/addCubeForOwnScale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="+1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Cubes in Switch"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/subtractCubeForOwnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="-1"/>
+
+        <TextView
+            android:id="@+id/cubes_in_own_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="0"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/addCubeForOwnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="+1"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/begin_teleop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:padding="40dp"
+        android:text="Begin Teleop"
+        android:textSize="30dp"/> -->
+
+
+</LinearLayout>
+
+</ScrollView>
